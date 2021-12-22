@@ -1,0 +1,10 @@
+{% extends "base.twig" %}
+
+{% block content %}		
+			<!-- Mostramos una lista de los artículos-->
+				<h2>{{articulo.nombre}}</h2>
+				<div><div>
+				<div id="detalles">{{articulo.detalle}}</div>
+				<img id="img_detalle_producto" src="{{ asset('img') }}/{{articulo.a_imagen}}" />
+{% endblock %}	
+

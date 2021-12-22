@@ -1,0 +1,41 @@
+<!-- base.php  -->
+<html>
+    <head>
+        <!-- Contenido del head -->
+        {% block stylesheets %}
+           {{encore_entry_link_tags('app')}}
+        {% endblock %}
+    </head>
+    <body>
+        <nav>
+            <!-- Menú de navegación -->
+			<div>
+    		<header>
+			<div class="cabecera"></div>
+				<ul id="menu">
+					<li id="lista"><a id="enlace" href="index.php">Home</a></li>
+					<li id="lista"><a id="enlace" href="error.php">About</a></li>
+					<li id="lista"><a id="enlace" href="error.php">Portfolio</a></li>
+					<li id="lista"><a id="enlace" href="error.php">Contact</a></li>
+				</ul>
+		</header>
+			</div>			
+        </nav>
+        <!-- En este bloque se cargará el contenido -->
+		<section>
+		<div>
+        {% block content %}{% endblock %}
+        </div>
+		</section>
+    		<footer >
+				<div class="box_nombre">
+					<h2>Daniel Asencio Scattolo  Tarea 5 DWES............</h2>
+				</div>
+				<div class="box_logo">
+					<a href="http://"></a>
+					
+						<img id="logo" src="/img/twitter.png" alt="">
+				</div>
+			</footer>
+    </body>
+</html>
