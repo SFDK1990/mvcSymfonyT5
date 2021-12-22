@@ -34,6 +34,5 @@ public function articulo($id)
     return $this->render('detalles_articulo.twig', array('articulo'=>$articulo));
 }
 
-
 }
 ?>

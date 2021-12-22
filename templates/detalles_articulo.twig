@@ -2,9 +2,10 @@
 
 {% block content %}		
 			<!-- Mostramos una lista de los artículos-->
-				<h2>{{articulo.nombre}}</h2>
-				<div><div>
-				<div id="detalles">{{articulo.detalle}}</div>
+				<h2 id="nombre_detalle">{{articulo.nombre}}</h2>
+				<div id="box_detalle">
 				<img id="img_detalle_producto" src="{{ asset('img') }}/{{articulo.a_imagen}}" />
+				<div id="detalles">{{articulo.detalle}}</div>
+				<div>
 {% endblock %}	
 
