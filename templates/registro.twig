@@ -1,10 +1,8 @@
 {% extends "base.twig" %}
 
-{% block content %}	
-	<form action="" method="post">
-		{%for campo in formulario %}
-			{{campo[0]}} <input type="{{campo[1]}}" 
-			name="{{campo[2]}}" value="{{campo[3]}}"><br>
-		{% endfor %}
-	</form>			
+{% block content %}		
+			{{ form_start(form) }}
+			{{ form_widget(form) }}
+			{{ form_end(form) }}
 {% endblock %}	
+

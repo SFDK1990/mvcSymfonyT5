@@ -57,4 +57,21 @@ static function articulo($id)
     return $detalles;
 }
 
+static function sugerencias()
+{
+	//Obtener usuario y sugerencia
+		$listaSugerencias = array(
+		array(
+			"usuario" => "Pepe23",
+			"sugerencia" => "Quiero precios más baratos"),	
+		array(
+			"usuario" => "jjabrahms",
+			"sugerencia" => "Mejoren la parte gráfica"),
+		array(
+			"usuario" => "plopez",
+			"sugerencia" => "Poca variedad de ratones") 
+	);
+	
+    return $listaSugerencias;
+}
 }
