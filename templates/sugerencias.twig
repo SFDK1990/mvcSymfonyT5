@@ -5,14 +5,16 @@
 			{%for sugerencia in sugerencias %}
 				<form action="" method="get">
 				<div id="formulario">
-				Usuario: {{sugerencia.usuario}}<br>
-				Sugerencia: {{sugerencia.sugerencia}}<br>
-				</div>
+				<fieldset>
+				<b>Usuario:</b> {{sugerencia.usuario}}<br>
+				<b>Sugerencia:</b> {{sugerencia.sugerencia}}<br>
 				{%for campo in formulario %}
-					{{campo[0]}} <input type="{{campo[1]}}" 
+					{{campo[0]}} <input id="btn" type="{{campo[1]}}" 
 					name="{{campo[2]}}" value="{{campo[3]}}">
 				{% endfor %}
 				<br />
+				</fieldset>
+				</div>
 				</form>
 
 			{% endfor %}

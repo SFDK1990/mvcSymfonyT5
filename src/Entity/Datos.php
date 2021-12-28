@@ -62,16 +62,106 @@ static function sugerencias()
 	//Obtener usuario y sugerencia
 		$listaSugerencias = array(
 		array(
-			"usuario" => "Pepe23",
+			"usuario" => "Pepe",
 			"sugerencia" => "Quiero precios más baratos"),	
 		array(
-			"usuario" => "jjabrahms",
+			"usuario" => "Daniel",
 			"sugerencia" => "Mejoren la parte gráfica"),
 		array(
-			"usuario" => "plopez",
+			"usuario" => "Ricardo",
 			"sugerencia" => "Poca variedad de ratones") 
 	);
 	
     return $listaSugerencias;
 }
+}
+
+// Clase de articulo
+
+class articulo{
+  private $id;
+  private $titulo;
+  private $imagen;
+  private $precio;
+
+  public function __construct($id, $titulo, $imagen, $precio){
+    $this->id=$id;
+    $this->titulo=$titulo;
+    $this->imagen=$imagen;
+    $this->precio=$precio;
+
+  }
+
+
+  /**
+   * Get the value of titulo
+   */
+  public function getTitulo()
+  {
+    return $this->titulo;
+  }
+
+  /**
+   * Set the value of titulo
+   */
+  public function setTitulo($titulo): self
+  {
+    $this->titulo = $titulo;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of imagen
+   */
+  public function getImagen()
+  {
+    return $this->imagen;
+  }
+
+  /**
+   * Set the value of imagen
+   */
+  public function setImagen($imagen): self
+  {
+    $this->imagen = $imagen;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of precio
+   */
+  public function getPrecio()
+  {
+    return $this->precio;
+  }
+
+  /**
+   * Set the value of precio
+   */
+  public function setPrecio($precio): self
+  {
+    $this->precio = $precio;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of id
+   */
+  public function getId()
+  {
+    return $this->id;
+  }
+
+  /**
+   * Set the value of id
+   */
+  public function setId($id): self
+  {
+    $this->id = $id;
+
+    return $this;
+  }
 }

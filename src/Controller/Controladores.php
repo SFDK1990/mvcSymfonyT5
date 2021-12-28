@@ -84,5 +84,7 @@ public function sugerencias(Request $request)
     ));
 }
 
+
+
 }
 ?>

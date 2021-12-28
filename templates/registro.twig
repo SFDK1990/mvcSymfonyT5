@@ -1,8 +1,9 @@
 {% extends "base.twig" %}
+{% form_theme form 'bootstrap_4_horizontal_layout.html.twig' %}
 
 {% block content %}		
-			{{ form_start(form) }}
-			{{ form_widget(form) }}
-			{{ form_end(form) }}
+			<div id="start">{{ form_start(form) }}</div>
+			<div id="widget">{{ form_widget(form) }}</div>
+			<div id="end">{{ form_end(form) }}</div>
 {% endblock %}	
 
