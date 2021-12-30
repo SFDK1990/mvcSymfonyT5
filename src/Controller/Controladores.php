@@ -10,17 +10,17 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-
-
-
-//Incluir clase helper Datos
 use App\Entity\Datos;
+
 
 class Controladores extends AbstractController
 {
 
 /** 
  * @Route("/", name="index")
+ * Introducimos en una variable los elementos de la "base de datos" ->(array asociativo)
+ * @param array Datos
+ * @return array pagina donde se muestra articulos.twig
  */
 public function home()
 {
@@ -29,6 +29,8 @@ public function home()
 }
 /** 
  * @Route("/articulo/{id}", name="articulo")
+ * @param array $id Dependiendo del ID en el array devolvemos el articulo elegido
+ * @return render detalle_articulo.twig
  */
 public function articulo($id)
 {
@@ -38,6 +40,10 @@ public function articulo($id)
 
 /** 
  * @Route("/registro", name="registro")
+ * @param mixed $data Datos que se agregan al formulario
+ * @return createView registro.twig
+ * @param mixed $request Si se envian todos los datos nos muestra el registro correcto
+ * @return render registro_correcto.twig
  */
 public function registro(Request $request)
 {   
@@ -64,14 +70,16 @@ public function registro(Request $request)
 
 /** 
  * @Route("/sugerencias", name="sugerencias")
+ * @param array Datos 
+ * @return render sugerencias.twig
  */
 public function sugerencias(Request $request)
 {
     $sugerencias = Datos::sugerencias();
 
-    // Creamos los campos del formulario
+    // Creamos los campos del formulario 
     $formulario = array(
-        //Vamos a seguir el patrón ('label', 'type', 'name', 'value')
+       //Introducimos los datos que queremos tener en el formulario
         array('Observación: ', 'text', 'observ', ''),
         array('', 'submit', 'valorar', 'Valorar')
     );
