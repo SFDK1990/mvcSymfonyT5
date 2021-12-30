@@ -321,16 +321,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "6d970a11479275300b5144e9373ce5feacfa9b91"
+                "reference": "e927fc2410c8723d053b8032e591cdff76587cdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/6d970a11479275300b5144e9373ce5feacfa9b91",
-                "reference": "6d970a11479275300b5144e9373ce5feacfa9b91",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/e927fc2410c8723d053b8032e591cdff76587cdb",
+                "reference": "e927fc2410c8723d053b8032e591cdff76587cdb",
                 "shasum": ""
             },
             "require": {
@@ -338,9 +338,9 @@
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0 || ^8.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
+                "doctrine/coding-standard": "^9.0",
+                "phpstan/phpstan": "^1.2.0",
+                "phpstan/phpstan-phpunit": "^1",
                 "phpunit/phpunit": "^7.5.20 || ^8.5 || ^9.0",
                 "squizlabs/php_codesniffer": "^3.0",
                 "symfony/phpunit-bridge": "^4.0.5",
@@ -391,7 +391,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/common/issues",
-                "source": "https://github.com/doctrine/common/tree/3.2.0"
+                "source": "https://github.com/doctrine/common/tree/3.2.1"
             },
             "funding": [
                 {
@@ -407,7 +407,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-19T06:47:22+00:00"
+            "time": "2021-12-26T22:39:45+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -2223,16 +2223,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v6.2.3",
+            "version": "v6.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "eeab0bbe6ac94a600a7da7aac020646dcd739484"
+                "reference": "01a4a9ba102a8034a968a46a939ba18ccdadc47e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/eeab0bbe6ac94a600a7da7aac020646dcd739484",
-                "reference": "eeab0bbe6ac94a600a7da7aac020646dcd739484",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/01a4a9ba102a8034a968a46a939ba18ccdadc47e",
+                "reference": "01a4a9ba102a8034a968a46a939ba18ccdadc47e",
                 "shasum": ""
             },
             "require": {
@@ -2295,9 +2295,9 @@
             ],
             "support": {
                 "issues": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/issues",
-                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.3"
+                "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.4"
             },
-            "time": "2021-12-17T14:36:53+00:00"
+            "time": "2021-12-24T11:52:04+00:00"
         },
         {
             "name": "symfony/apache-pack",
@@ -7517,9 +7517,6 @@
             "require": {
                 "php": "^7.1 || ^8.0"
             },
-            "replace": {
-                "myclabs/deep-copy": "self.version"
-            },
             "require-dev": {
                 "doctrine/collections": "^1.0",
                 "doctrine/common": "^2.6",
@@ -8112,16 +8109,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.10",
+            "version": "9.5.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c814a05837f2edb0d1471d6e3f4ab3501ca3899a"
+                "reference": "2406855036db1102126125537adb1406f7242fdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
-                "reference": "c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2406855036db1102126125537adb1406f7242fdd",
+                "reference": "2406855036db1102126125537adb1406f7242fdd",
                 "shasum": ""
             },
             "require": {
@@ -8199,11 +8196,11 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.10"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.11"
             },
             "funding": [
                 {
-                    "url": "https://phpunit.de/donate.html",
+                    "url": "https://phpunit.de/sponsors.html",
                     "type": "custom"
                 },
                 {
@@ -8211,7 +8208,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-25T07:38:51+00:00"
+            "time": "2021-12-25T07:07:57+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -9776,5 +9773,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

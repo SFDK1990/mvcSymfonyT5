@@ -2,6 +2,13 @@
 
 namespace App\Entity;
 
+/**Funcion que carga los datos de una lista y nos devuelve los articulos almacenados */
+/**
+ * @param array
+ * @return $articulos
+ * 
+ */
+
 class Datos
 {
  
