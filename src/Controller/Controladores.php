@@ -84,8 +84,10 @@ public function sugerencias(Request $request)
         array('', 'submit', 'valorar', 'Valorar')
     );
     
+    //Hacemos la query y obtenemos la observacion que hemos hecho
     if ($request->query->get('observ'))
     {
+        //Nos devuelve una pagina en blanco con nuestra observacion
         return new Response('<html><body>Grabar ' . $request->query->get('observ') . '</body></html>');
     }
 

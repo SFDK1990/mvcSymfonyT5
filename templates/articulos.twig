@@ -6,7 +6,7 @@
 			{%for articulo in articulos %}
 			<li id="item">
                     <img id="img_producto" src="{{ asset('img') }}/{{articulo.a_imagen}}" />               
-                    <a href="{{ path('articulo', {'id':articulo.id})}}"><h2>{{articulo.nombre}}</h2></a>
+                    <a href="{{ path('articulo', {'id':articulo.id})}}"><h2 id ="articuloNombre" >{{articulo.nombre}}</h2></a>
             </li>
 			{% endfor %}
         </ul>

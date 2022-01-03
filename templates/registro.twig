@@ -1,6 +1,6 @@
 {% extends "base.twig" %}
 {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' %}
-
+{# Creamos otro formulario dinamicamente con un inicio/cabecera. Un contenido y un final de formulario #}
 {% block content %}		
 			<div id="start">{{ form_start(form) }}</div>
 			<div id="widget">{{ form_widget(form) }}</div>
